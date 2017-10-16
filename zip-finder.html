@@ -1,25 +1,20 @@
-{% extends "../home/base.html" %}
-{% block title %}
-Zip Finder
-{% endblock %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Zip Finder
+	</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<script src="/static/js/zipFinder.js"></script>
+</head>
+<body>
 
-{% block header %}
-<script src="/static/js/zipFinder.js"></script>
-{% endblock %}
+	<div class="text-center mt-5">
+		<h6 class="mb-3">Enter city, state in preferred format for zip code.</h6>
+		<input type="text" id="loc" style="height:40px;" class="pl-2">
+		<button id="locbtn" class="btn btn-primary" style="height:50px, border:none">GET ZIP</button>
+		<div id="result" style="height:60px;color:green; font-size:50px"></div>
+	</div>
 
-{% block content %}
-
-<div class="text-center mt-5">
-	<h6 class="mb-3">Enter city, state in preferred format for zip code.</h6>
-	<input type="text" id="loc" style="height:40px;" class="pl-2">
-	<button id="locbtn" class="btn btn-primary" style="height:50px, border:none">GET ZIP</button>
-	<div id="result" style="height:60px;color:green; font-size:50px"></div>
-</div>
-
-
-
-<div class="text-center">
-	<a href="#"><i class="fa fa-github fontlink-light" aria-hidden="true"></i></a>
-	<p class="text-center description">This project was written in jQuery. Click for github code.</p>
-</div>
-{% endblock %}
+</body>
+</html>	
